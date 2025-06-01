@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #f5e8da, #a26e47);
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    padding: 30px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-title {
+    font-size: 2.5rem;
+    color: #5c3a21;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #7b5b44;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.card {
+    background-color: #fef1e7;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.left-panel {
+    flex: 2;
+}
+
+.right-panel {
+    flex: 8;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label,
+.dropdown-label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #5c3a21;
+}
+
+.input-box {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #bfa084;
+    font-size: 1rem;
+    background-color: #fff7f0;
+    color: #5c3a21;
+}
+
+.dropdown {
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fff7f0;
+    border: 1px solid #bfa084;
+    color: #5c3a21;
+}
+
+.full-btn {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #844c28;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.full-btn:hover {
+    background-color: #6b3d20;
+}
+
+.status-message {
+    margin-top: 15px;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.graph-style {
+    height: 400px;
+}

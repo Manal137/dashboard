@@ -1,0 +1,48 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Secrets and config
+.env
+*.env
+
+# Build and packaging
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Node or frontend folders (if any)
+node_modules/
+*.lock
+
+# Test files
+tests/
+*.pytest_cache/
+
+# Editor & IDE configs
+.vscode/
+.idea/
+*.swp
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Docker/CI artifacts
+docker-compose.override.yml
+*.bak
