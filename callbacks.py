@@ -1,4 +1,3 @@
-
 # from dash import Output, Input, State
 # import plotly.graph_objs as go
 # import pickle
@@ -75,16 +74,11 @@
         
 #         return go.Figure()
 
-
-
 from dash import Output, Input, State
 import plotly.graph_objs as go
 import pickle
 import base64
 from bladerunner.engine import engine_iterations
-
-design_params = "design_params.json"
-engine_iter = engine_iterations.EngineIterations(design_params)
 
 # Helpers for (de)serialization
 def serialize(obj):
@@ -93,7 +87,9 @@ def serialize(obj):
 def deserialize(s):
     return pickle.loads(base64.b64decode(s.encode()))
 
-def register_callbacks(app):
+def register_callbacks(app, design_params):
+    # Initialize engine_iter here with design_params path
+    engine_iter = engine_iterations.EngineIterations(design_params)
 
     @app.callback(
         Output('message', 'children'),
@@ -150,5 +146,5 @@ def register_callbacks(app):
                 return engine_motor_options.figure_flightSpeed_rpm()
         except Exception as e:
             print(f"⚠️ Error in show_plot: {e}")
-        
+
         return go.Figure()
